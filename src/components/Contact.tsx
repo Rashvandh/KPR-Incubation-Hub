@@ -19,7 +19,7 @@ const Contact = () => {
       icon: Globe,
       title: "Website",
       content: "www.kprcas.ac.in",
-      link: "https://www.kprcas.ac.in",
+      link: "https://kprcas.ac.in/",
     },
   ];
 
