@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc. should be defined here. 
 All colors MUST be HSL.
 */
 
@@ -23,8 +23,8 @@ All colors MUST be HSL.
     --secondary: 38 93% 60%;
     --secondary-foreground: 214 100% 20%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 214 15% 50%;
+    --muted: 210 10% 90%; /* Updated muted background */
+    --muted-foreground: 214 15% 30%; /* Updated muted text for better readability */
 
     --accent: 214 100% 34%;
     --accent-foreground: 0 0% 100%;
@@ -72,8 +72,8 @@ All colors MUST be HSL.
     --secondary: 38 93% 60%;
     --secondary-foreground: 214 100% 10%;
 
-    --muted: 214 30% 15%;
-    --muted-foreground: 214 15% 65%;
+    --muted: 214 30% 15%; /* Dark mode muted background */
+    --muted-foreground: 214 15% 75%; /* Dark mode muted text for contrast */
 
     --accent: 214 100% 45%;
     --accent-foreground: 0 0% 100%;
@@ -85,9 +85,8 @@ All colors MUST be HSL.
     --input: 214 30% 20%;
     --ring: 214 100% 45%;
   }
-}
 
-@layer base {
+  /* Apply border color to all elements by default */
   * {
     @apply border-border;
   }

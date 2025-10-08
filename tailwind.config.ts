@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,8 +19,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Lato', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        // Updated fonts to Source Sans Pro
+        sans: ['"Source Sans Pro"', 'sans-serif'],
+        heading: ['"Source Sans Pro"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
